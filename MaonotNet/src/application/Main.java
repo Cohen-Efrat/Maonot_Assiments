@@ -4,6 +4,9 @@ import javafx.application.Application;
 import javafx.stage.Stage;
 import javafx.scene.Scene;
 import javafx.scene.layout.BorderPane;
+
+import java.sql.SQLException;
+
 import DBmanger.DBmanger;
 
 public class Main extends Application {
@@ -22,9 +25,10 @@ public class Main extends Application {
 		}
 	}
 	
-	public static void main(String[] args) {
+	public static void main(String[] args) throws SQLException {
 		DBmanger conactDB = new DBmanger();
 		conactDB.init();
+		conactDB.getData();
 		launch(args);
 		conactDB.close();
 	}
