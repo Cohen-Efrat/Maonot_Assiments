@@ -55,7 +55,7 @@ public class DBmanger {
 						rs.getInt("PartnerId2"),rs.getInt("PartnerId3")
 						);
 				System.out.println(s.toString());
-				
+				//bla bla
 			}
 		}
 	catch(Exception e) {
